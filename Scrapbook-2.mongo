@@ -1,0 +1,5 @@
+// Select the collectionto use 
+use esic_chat;
+
+// get all documents from collections
+db.getCollection("atendimentos").find({});

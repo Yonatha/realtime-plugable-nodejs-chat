@@ -1,0 +1,412 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #C5DDEB;
+    font: 14px/20px "Lato", Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    background: #444753;
+    border-radius: 5px;
+}
+
+.people-list {
+    width: 16%;
+    float: left;
+    height: 100%;
+    background: #444753;
+    color: #ffffff;
+    overflow-y: auto;
+}
+
+.people-list .search {
+    padding: 20px;
+}
+
+.people-list input {
+    border-radius: 3px;
+    border: none;
+    padding: 14px;
+    color: white;
+    background: #6A6C75;
+    width: 90%;
+    font-size: 14px;
+}
+
+.people-list .fa-search {
+    position: relative;
+    left: -25px;
+}
+
+.people-list ul {
+    padding: 20px;
+    height: 81%;
+}
+
+.people-list ul li {
+    padding-bottom: 20px;
+}
+
+.people-list img {
+    float: left;
+}
+
+.people-list .about {
+    float: left;
+    margin-top: 8px;
+}
+
+.people-list .about {
+    padding-left: 8px;
+}
+
+.people-list .status {
+    color: #92959E;
+}
+
+.chat {
+    width: 84%;
+    float: left;
+    background: #F2F5F8;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #434651;
+    height: 100%;
+}
+
+.chat .chat-header {
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+.chat .chat-header img {
+    float: left;
+}
+
+.chat .chat-header .chat-about {
+    float: left;
+    padding-left: 10px;
+    margin-top: 6px;
+}
+
+.chat .chat-header .chat-with {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chat .chat-header .chat-num-messages {
+    color: #92959E;
+}
+
+.chat .chat-header .fa-star {
+    float: right;
+    color: #D8DADF;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.chat .chat-history {
+    padding: 30px 30px 20px;
+    border-bottom: 2px solid white;
+    overflow-y: scroll;
+    height: 575px;
+}
+
+.chat .chat-history .message-data {
+    margin-bottom: 15px;
+}
+
+.chat .chat-history .message-data-time {
+    color: #a8aab1;
+    padding-left: 6px;
+}
+
+.chat .chat-history .message {
+    color: white;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    width: 90%;
+    position: relative;
+}
+
+/*.chat .chat-history .message:after {*/
+    /*bottom: 100%;*/
+    /*left: 7%;*/
+    /*border: solid transparent;*/
+    /*content: " ";*/
+    /*height: 0;*/
+    /*width: 0;*/
+    /*position: absolute;*/
+    /*pointer-events: none;*/
+    /*border-bottom-color: #86BB71;*/
+    /*border-width: 10px;*/
+    /*margin-left: -10px;*/
+/*}*/
+
+.chat .chat-history .my-message {
+    background: #86BB71;
+}
+
+.chat .chat-history .other-message {
+    background: #214c7d;
+    margin-top: 11px;
+}
+
+.chat .chat-history .other-message:after {
+    border-bottom-color: #214c7d;
+    left: 93%;
+}
+
+.chat .chat-message {
+    padding: 30px;
+}
+
+.chat .chat-message textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    font: 14px/22px "Lato", Arial, sans-serif;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.chat .chat-message .fa-file-o, .chat .chat-message .fa-file-image-o {
+    font-size: 16px;
+    color: gray;
+    cursor: pointer;
+}
+
+.chat .chat-message button {
+    float: right;
+    color: #214c7d;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #F2F5F8;
+}
+
+.chat .chat-message button:hover {
+    color: #75b1e8;
+}
+
+.online, .offline, .me {
+    margin-right: 3px;
+    font-size: 10px;
+}
+
+.online {
+    color: #86BB71;
+}
+
+.offline {
+    color: #E38968;
+}
+
+.me {
+    color: #214c7d;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#nickWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #444753;
+    z-index: 999;
+    top: 0;
+}
+
+#nickWrap form#setNick {
+    position: relative;
+    margin: auto;
+    width: 415px;
+    top: 45%;
+}
+
+#setNick button {
+    width: 48px;
+    height: 43px;
+}
+
+#setNick input {
+    padding: 10px;
+    font-size: 17px;
+    width: 86%;
+    text-align: center;
+}
+
+#chatWrap {
+    width: 100%;
+}
+
+#chat {
+    width: 87%;
+    height: 68%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-top-width: 1px;
+    overflow-y: auto;
+}
+
+#chat li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#chat li span.nick {
+    font-weight: bold;
+}
+
+#chat .msg_normal {
+    color: #000000;
+    background: #ffffff;
+}
+
+#chat .msg_error {
+    color: #ffffff;
+}
+
+#chat .msg_whisper {
+    font-style: italic;
+    color: #ffffff;
+    background: green
+}
+
+#chat li span.msg {
+}
+
+#users li:hover {
+    background: #444766;
+}
+
+#users li .notify {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    padding: 2px 5px 2px 6px;
+    background-color: green;
+    color: white;
+    font-size: 0.65em;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px gray;
+    display: none;
+}
+
+#users li.active {
+    background-color: #2175e0;
+}
+
+#users li {
+    cursor: pointer;
+    height: 52px;
+    padding: 9px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #444766;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#nickError {
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+form#send-message button {
+    height: 63px;
+    position: absolute;
+    right: 0;
+    width: 57px;
+}
+
+form#send-message #message {
+    width: 95%;
+    height: 62px;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+}
+
+form#send-message {
+    float: left;
+    bottom: 0;
+    width: 100%;
+    height: 67px;
+    margin-top: 0;
+    position: relative;
+}
+
+
+
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}

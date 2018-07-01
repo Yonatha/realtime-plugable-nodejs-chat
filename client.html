@@ -1,0 +1,51 @@
+<link rel="stylesheet" media="screen" href="assets/css/bootstrap.css" />
+<link rel="stylesheet" media="screen" href="assets/css/bootstrap-material-design.css" />
+<link rel="stylesheet" media="screen" href="assets/css/icon.css" />
+<link rel="stylesheet" media="screen" href="assets/css/client.css" />
+<script src="http://localhost:3001/socket.io/socket.io.js"></script>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/client.js"></script>
+
+<title>Client</title>
+<meta charset="utf-8" />
+
+<div id="body">
+    <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+        <i class="material-icons">chat</i>
+    </div>
+    <div class="chat-box">
+        <div class="chat-box-header">Atendimento
+            <span class="chat-box-toggle">
+                <i class="material-icons">close</i>
+            </span>
+        </div>
+        <div class="chat-box-body">
+            <div class="chat-box-overlay">
+            </div>
+            <div class="chat-logs"></div>
+        </div>
+        <div class="chat-input">
+
+            <form id="setNick">
+                <p id="nickError"></p>
+                <span>
+                    Preencha seu nome abaixo para iniciar o atendimento:
+                </span>
+                <input size="35" id="nickname" value="" placeholder="Nome..." autocomplete="off"/>
+                <button type="submit">
+                    <i class="material-icons">send</i>
+                </button>
+            </form>
+
+
+            <form id="send-message">
+                <input type="text" id="chat-input" placeholder="Escreva aqui..." autocomplete="off"/>
+                <input id="recipient" value="" name="recipient" />
+                <button type="submit" class="chat-submit" id="chat-submit">
+                    <i class="material-icons">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
