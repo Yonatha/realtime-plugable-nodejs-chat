@@ -1,7 +1,7 @@
-# Real Time "plugable" Nodejs chat
+# Real Time "plugable" Nodejs multi chat room
 
 
-Simple, real-time and "plugable" chat with Nodejs, Socket.io and MongoDB.
+Simple, real-time and "plugable" multi chat room with Nodejs, Socket.io and MongoDB.
 site, portal, etc..
 
 ## Screanshots
@@ -13,7 +13,7 @@ Server
 
 ##The chat consists:
  - Service script that provides the resources enable to connect clients.
- - HTML version to be incorporated into any existing system.
+ - HTML version to be incorporated **into** any existing system.
  - Version in HTMl client to be incorporated to website, portal, etc ...
 
 ##Service script
@@ -39,12 +39,17 @@ $ docker run --name chat_mongo -p 27017: 27017 -d mongo
 Note: If you do not want to use docker, you can install MongoDB normally.
 
 Realize the clone of this repository
-git clone https://github.com/Yonatha/realtime-plugable-nodejs-chat.git
 
 ```console
+$ git clone https://github.com/Yonatha/realtime-plugable-nodejs-chat.git
 $ cd realtime-plugable-nodejs-chat
 $ npm install
-$ node app.js // if you cant restart automaticaly app.js use the command $ nodemon app.js (helpful to development environment)
+$ node app.js 
+```
+
+if you cant restart automaticaly app.js use the command (helpful to development environment) ```
+```console
+$ nodemon app.js
 ```
 
 Open the server.html versions to get access to the chat service manager and open the client.html version, sample layout to be
