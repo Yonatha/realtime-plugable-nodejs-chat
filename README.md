@@ -33,7 +33,7 @@ Assuming you already have nodejs installed, we will ensure that MongoDB is also 
 I use an image in MongoDB Docker and create a container with:
 
 ```console
-$ docker run --name chat_mongo -p 27017: 27017 -d mongo
+$ docker run --name chat_mongo -p 27017:27017 -d mongo
 ```
 
 Note: If you do not want to use docker, you can install MongoDB normally.

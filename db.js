@@ -2,7 +2,7 @@
 var mongoClient = require("mongodb").MongoClient;
 var ObjectId = require("mongodb").ObjectId;
 
-mongoClient.connect("mongodb://localhost:17017/esic_chat")
+mongoClient.connect("mongodb://localhost:27017/esic_chat")
     .then(conn => global.conn = conn.db("esic_chat"))
     .catch(err => console.log(err))
 
